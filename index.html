@@ -1,0 +1,84 @@
+<!DOCTYP html>
+    <html lang="pt-br">
+
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+        <title>Página de cadastro</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1> Cadastro de usuário </h1>
+        <p>
+            Olá! Seja bem-vindo(a)!
+            </br>
+            Para nos conhecermos melhor, por favor, preencha os campos abaixo com seus dados pessoais para realizarmos o
+            cadastro.
+        </p>
+        <form autocomplete="off" onsubmit="return enviaForm(); FormSubmit(this);">
+            <fieldset>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="Nome" id="nome" required>
+                </br>
+                <label for="cpf"> CPF</label>
+                <input type="text" name="CPF" id="cpf" required>
+                </br>
+                <label for="rg">RG </label>
+                <input type="text" name="RG" id="rg">
+                </br>
+                <label for="sexo"> Sexo </label>
+                <select id=sexo>
+                    <option> Feminino </option>
+                    <option> Masculino </option>
+                    <option> Prefiro não informar </option>
+                </select>
+                </br>
+                <label for="cep"> CEP </label>
+                "<input type="text" name="CEP" id="cep" required>"
+                </br>
+                <label for="rua"> Rua</label>
+                "<input type="text" name="Rua" id="rua" required>"
+                </br>
+                <label for="numero"> número </label>
+                "<input type="text" name="Número" id="numero" required>"
+                </br>
+                <label for="complemento"> complemento (opcional) </label>
+                "<input type="text" name="Complemento" id="complemento">"
+                </br>
+                <label for="bairro"> Bairro </label>
+                "<input type=text" name="Bairro" id="bairro" required>"
+                </br>
+                <label for="cidade"> Cidade </label>
+                "<input type="text" name="Cidade" id="cidade" required>"
+                </br>
+                <label for="estado"> Estado </label>
+                "<input type="text" name="Estado" id="estado" required>"
+                </br>
+                <label for="celular"> Celular </label>
+                <input type="text" name="Celular" id="celular" required>"
+                </br>
+                <label for="telefone"> Telefone fixo </label>
+                "<input type="text" name="telefone" id="telefone" required>"
+                </br>
+                <label for="email"> E-mail </label>
+                "<input type="email" name="E-mail" id="email">"
+                </br>
+                <input type="submit" name="enviar" id="enviar">
+                </br>
+            </fieldset>
+        </form>
+        <footer>
+            <p>
+                Página desenvolvida por Maria Vitória Souza
+            <p> &copy; Todos os direitos reservados. </p>
+            </p>
+        </footer>
+        <script type="text/javascript" src="js/alerta.js"></script>
+        <script type="text/javascript" src="js/mascara.js"></script>
+        <script type="text/javascript" src="js/valida cep.js"></script>
+        <script type="text/javascript" src="js/valida cpf.js"></script>
+    </body>
+
+    </html>
